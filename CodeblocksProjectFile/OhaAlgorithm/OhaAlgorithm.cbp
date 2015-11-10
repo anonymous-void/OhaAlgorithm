@@ -31,7 +31,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../../P48-Chap2-链表.c">
+		<Unit filename="../../P78-Chap4-深度优先搜索.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
