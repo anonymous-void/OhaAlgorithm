@@ -31,12 +31,12 @@ int main() {
 
     printf("Input the coordinate of the Start point: \n");
     scanf("%i %i", &startx, &starty);
-    startx --;  //ÒòÎªÊäÈëÆğÊ¼µãµÄ×ø±êÊÇ1baseµÄ£¬¶øCµÄArraryÊÇ0baseµÄ
+    startx --;  //å› ä¸ºè¾“å…¥èµ·å§‹ç‚¹çš„åæ ‡æ˜¯1baseçš„ï¼Œè€ŒCçš„Arraryæ˜¯0baseçš„
     starty --;
 
     printf("Input the coordinate of the Destination point: \n");
     scanf("%i %i", &des_x, &des_y);
-    des_x --;   //ÀíÓÉÍ¬ÉÏÆğÊ¼µã
+    des_x --;   //ç†ç”±åŒä¸Šèµ·å§‹ç‚¹
     des_y --;
 
     head = 0;  tail = 0;
@@ -49,18 +49,18 @@ int main() {
     tail ++;
 
     while(head < tail) {
-//±éÀúÏÂÒ»²½µÄËÄ¸ö·½Ïò
+//éå†ä¸‹ä¸€æ­¥çš„å››ä¸ªæ–¹å‘
         for (i = 0; i < 4; i++) {
             tx = que[head].x + next[i][0];
             ty = que[head].y + next[i][1];
 
             if (tx < 0 || tx > row - 1 || ty < 0 || ty > col - 1) {
-//                Èç¹û³¬³ö±ß½ç
+//                å¦‚æœè¶…å‡ºè¾¹ç•Œ
                 continue;
             }
 
             if (map[tx][ty] == 0 && book[tx][ty] == 0) {
-//                Èç¹û¸Ãµã²»ÊÇÕÏ°­Îï£¬ÇÒÖ®Ç°Ã»×ß¹ı£¬Ôò...
+//                å¦‚æœè¯¥ç‚¹ä¸æ˜¯éšœç¢ç‰©ï¼Œä¸”ä¹‹å‰æ²¡èµ°è¿‡ï¼Œåˆ™...
                 que[tail].x = tx;
                 que[tail].y = ty;
                 que[tail].s = que[head].s + 1;
