@@ -17,10 +17,10 @@ void dfs(int x, int y, int step) {
     for(k=0; k<=3; k++) {
         tx = x + next[k][0];
         ty = y + next[k][1];
-        //ÅĞ¶ÏÊÇ·ñÔ½½ç
+        //?????????
         if(tx<1 || tx>n || ty<1 || ty>m)
             continue;
-        //ÅĞ¶Ï¸ÄµãÊÇ·ñÎªÕÏ°­Îï»òÕßÒÑ¾­ÔÚÂ·¾¶ÖĞ
+        //???????????????????????????
         if(a[tx][ty] == 0 && book[tx][ty] == 0){
             book[tx][ty] = 1;
             dfs(tx, ty, step+1);
@@ -34,20 +34,20 @@ int main()
 {
     int i, j, startx, starty;
 
-    printf("¶ÁÈëĞĞ¡¢ÁĞ£º");
+    printf("è¯·è¾“å…¥åœ°å›¾å°ºå¯¸ï¼š");
     scanf("%d %d", &n, &m);
 
-    printf("ÊäÈëÃÔ¹¬");
+    printf("æ‚¨è¾“å…¥çš„åœ°å›¾æ˜¯è¿™ä¸ªï¼š\n");
     for(i=1; i<=n; i++)
         for(j=1; j<=m; j++)
             scanf("%d", &a[i][j]);
 
-    printf("ÊäÈëÆğµãºÍÖÕµã×ø±ê£º");
+    printf("è¯·è¾“å…¥èµ·å§‹ç‚¹ï¼š");
     scanf("%d %d %d %d", &startx, &starty, &p, &q);
 
     book[startx][starty] = 1;
     dfs(startx, starty, 0);
 
-    printf("×î¶Ì²½ÊıÎª£º%d", min);
+    printf("æœ€å°æ­¥æ•°ï¼š%d", min);
 
 }
