@@ -3,25 +3,20 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/..">
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../P131-Chap5-DFS-Graph_Traverse.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../P144-Chap5-BFS-LeastTransport.c" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
-          <root url="file://D:/Software/MinGW/include" />
           <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include" />
           <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include-fixed" />
-          <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include/c++" />
-          <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include/ssp" />
+          <root url="file://D:/Software/MinGW/include" />
         </CLASSES>
         <SOURCES>
-          <root url="file://D:/Software/MinGW/include" />
           <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include" />
           <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include-fixed" />
-          <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include/c++" />
-          <root url="file://D:/Software/MinGW/lib/gcc/mingw32/4.7.1/include/ssp" />
+          <root url="file://D:/Software/MinGW/include" />
         </SOURCES>
       </library>
     </orderEntry>
